@@ -21,6 +21,7 @@ Time complexity: O(1)
 
 Space complexity: O(1)
 
+
 Function 3
 
 This function uses two nested loops. The outer loop runs about n times. For each pass of the outer loop, the inner loop runs slightly fewer times.
@@ -37,6 +38,7 @@ Time complexity: O(n²)
 
 Space complexity: O(1) since the list is sorted in place
 
+
 Function 4
 
 This function runs a loop from 1 to number. That means it executes n times.
@@ -50,6 +52,23 @@ Space complexity: O(1)
 
 ### Timing Data
 
-| Team member | Timing for fibonacci | Timing for sum_to_number |
-|-------------|---------------------|-------------------------|
-|Japhet       |                     |                         |
+| Team member       | Timing for fibonacci  | Timing for sum_to_number 
+|-------------------|-----------------------|-------------------------|
+|Japheth            |   0.000005166         |        0.705679456                     
+
+
+### Summary
+
+| Function       | Fastest (s) | Slowest (s) | Difference (s) |
+|----------------|------------:|------------:|---------------:|
+| sum_to_number  | 0.706       | 0.706       | 0.000          |
+| fibonacci      | 0.000005    | 0.000005    | 0.000          |
+
+
+### Reflection
+
+Since I worked individually, there were no different versions from group members to compare. My timing results represent one implementation of each function.
+
+The fibonacci function ran very quickly because my version uses an iterative approach and only keeps a few variables in memory. The sum_to_goal function took longer because it checks pairs of numbers using nested loops, and the amount of work increases quickly as the list size grows.
+
+This demonstrates how algorithm design affects performance. Even small differences in structure can cause large timing differences when the input becomes larger.
