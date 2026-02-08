@@ -59,3 +59,18 @@ T(n) = T(n/2) + 1
      = T(1) + log₂(n)
 
 **Time Complexity:** O(log n)
+
+Part C – Reflection
+How to approach writing recursive functions
+
+When I start writing a recursive function, the first thing I think about is the base case. This is the situation where the function stops calling itself. Without a base case, the function would run forever, so this step is really important.
+
+After that, I figure out how to make the problem smaller so the function can call itself again with a simpler version of the input. I try to think of it as solving one small piece and trusting the function to solve the rest.
+
+Finally, I test edge cases like empty inputs or very small values to make sure the recursion actually stops and returns the correct result.
+
+How analyzing recursive functions differs from non-recursive functions
+
+Analyzing recursive functions feels more mathematical compared to analyzing regular loops. With loops, we usually just count how many times the loop runs. With recursion, we first create a recurrence relation that describes how the function keeps calling itself. Then we expand or “unroll” the recurrence to see the pattern and determine the time complexity.
+
+Even though the methods are different, the goal is the same: count the number of operations and figure out the Big-O complexity. The biggest difference is that recursion focuses on how the problem size gets smaller with each call instead of how many times a loop runs.
