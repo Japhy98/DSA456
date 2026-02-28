@@ -1,4 +1,11 @@
-. What sorting algorithm was the speaker trying to improve?
+# DSA456 – Lab 4
+
+Name: Japheth Igbinovia  
+Email: jigbinovia1@myseneca.ca  
+
+
+
+What sorting algorithm was the speaker trying to improve?
 
 The speaker was mainly trying to improve QuickSort, specifically the version used inside the C++ standard library (std::sort). He explains that most implementations actually use something called introsort, which starts with QuickSort and switches to HeapSort or Insertion Sort depending on the situation. The talk focuses on how small design decisions inside this hybrid approach can significantly affect real-world performance.
 
