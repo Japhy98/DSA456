@@ -1,0 +1,28 @@
+Part C – Complexity Analysis
+insert(data)
+
+The insert function traverses the linked list until it finds the correct sorted position. In the worst case, it may need to check every node in the list.
+
+Time Complexity:
+O(n)
+
+remove(data)
+
+The remove function searches through the list to find the node containing the specified data. In the worst case, it may need to traverse the entire list.
+
+Time Complexity:
+O(n)
+
+is_present(data)
+
+The is_present function searches the linked list for a value. In the worst case, it checks all nodes.
+
+Time Complexity:
+O(n)
+
+len()
+
+The len function simply returns the stored variable count, which keeps track of the number of nodes.
+
+Time Complexity:
+O(1)
